@@ -64,7 +64,7 @@
 
 如果你有一定人工智能知识和经验，你就应该能想到将音乐转变为谱面实际上就是一个 **Seq2Seq** 的问题，而这方面的研究已经很成熟了。
 
-事实正式如此，有大佬在 Github 上开源了一个名为 **ddc(Dance Dance Convolution)** 的模型，能够将输入的音源转成我们前面提到的 `sm` 格式。
+事实正是如此，有大佬在 Github 上开源了一个名为 **ddc(Dance Dance Convolution)** 的模型，能够将输入的音源转成我们前面提到的 `sm` 格式。
 
 项目网址：https://github.com/chrisdonahue/ddc
 
