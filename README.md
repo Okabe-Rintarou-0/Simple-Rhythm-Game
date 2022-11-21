@@ -72,7 +72,7 @@
 
 ![](imgs/ddc.jpg)
 
-你可以访问 https://ddc.chrisdonahue.com/ 在线生成，也可以使用 docker 在本地部署生成（访问http://localhost:8080）：
+你可以访问 https://ddc.chrisdonahue.com/ 在线生成，也可以使用 docker 在本地部署生成（访问 http://localhost:8080 ）：
 
 ```
 docker run -it -p 8080:80 chrisdonahue/ddc:latest
