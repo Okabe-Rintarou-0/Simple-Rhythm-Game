@@ -18,13 +18,46 @@
 
 实际上，前者，以 [`Stepmania`](https://github.com/stepmania/stepmania)为例，其谱面对应一个[.sm](https://github.com/stepmania/stepmania/wiki/sm)格式的文件，该文件的形式如下所示：
 
-![](imgs/sm.jpg)
+```
+#TITLE:NARWHAL;
+#ARTIST:Unknown Artist;
+#MUSIC:80b84189-1037-4146-89ae-11893a1eafd0.mp3;
+#OFFSET:0.0;
+#BPMS:0.0=125.0;
+#STOPS:;
+#NOTES:
+    dance-single:
+    DanceDanceConvolutionV1:
+    Medium:
+    5:
+    0.0,0.0,0.0,0.0,0.0:
+0000
+0000
+0000
+0000
+0000
+```
 
 以 `#` 开头的行描述了诸如 `BPM(beat per minute)` 等必要属性，最关键的内容在于 `#NOTES` 后面紧跟着的内容，它描述了音符和四个方向的对应关系。
 
 上面的文件看起来还不是很友好？没关系，我找到了一个[可用的脚本](https://github.com/jhaco/SMFile_Parser)，可以把 `.sm` 文件变为如下格式：
 
-![](imgs/sm_after_script.jpg)
+```
+TITLE NARWHAL
+BPM 125
+DIFFICULTY Medium
+NOTES
+0001 8.82
+1000 15.77
+1000 17.51
+0001 49.69
+0010 51.86
+0100 53.169999999999995
+1000 56.64
+0001 58.81999999999999
+0010 60.12
+0100 62.73
+```
 
 `NOTES` 和方向的对应关系变简洁了（左边是**四个方向**，右边是**音符出现的时间**）。
 
